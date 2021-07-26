@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Spaceship
+comment0.text=\n\ Write\ a\ description\ of\ class\ Spaceship\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=cls\ cla
+comment1.target=void\ drag(java.lang.Class,\ java.lang.Class)
+comment2.params=n
+comment2.target=void\ move(int)
+comment3.params=cls\ cla
+comment3.target=void\ test(java.lang.Class,\ java.lang.Class)
+comment4.params=clb
+comment4.target=void\ score(java.lang.Class)
+numComments=5
