@@ -8,6 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Space extends World
 {
+    
+    //Getters y setters de la variable que lleva el puntaje del usuario       
     private static int score = 0;
     
     public static int getScore()
@@ -20,13 +22,9 @@ public class Space extends World
         score = i;
     }
     
-    /**
-     * Constructor for objects of class Space.
-     * 
-     */
+    //Metodo creador de la clase Space
     public Space()
-    {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+    {            
         super(1366, 768, 1); 
         prepare();
        
@@ -37,24 +35,22 @@ public class Space extends World
         }
     }
     
+    //Metodo para crear un objeto de la clase BlueSpaceship
     public void createB()
     {
         BlueSpaceship bluespaceship = new BlueSpaceship();
         addObject(bluespaceship,683,0);
-        bluespaceship.score();
+        //bluespaceship.score();
     }
     
+    //Metodo para crear un objeto de la clase RedSpaceship
     public void createR()
     {
         RedSpaceship redspaceship = new RedSpaceship();
         addObject(redspaceship,683,0);
     }
     
-    
-    /**
-     * Prepare the world for the start of the program.
-     * That is: create the initial objects and add them to the world.
-     */
+    //Prepara el mundo para poner cada objeto en su lugar correspondiente
     private void prepare()
     {
         //Cuadro Rojo

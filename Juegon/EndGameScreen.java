@@ -1,18 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class EndGameScreen here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+
 public class EndGameScreen extends World
 {
 
-    /**
-     * Constructor for objects of class EndGameScreen.
-     * 
-     */
+    //Metodo constructor de la pantalla GameOver
     public EndGameScreen()
     {            
         super(1366, 768, 1); 

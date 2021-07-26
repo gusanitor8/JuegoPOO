@@ -15,6 +15,7 @@ public class Score extends Actor
     public void act() 
     {
         score();
+        //
     }    
     
     public void score()

@@ -1,12 +1,13 @@
 #BlueJ class context
 comment0.target=Spaceship
-comment0.text=\n\ Write\ a\ description\ of\ class\ Spaceship\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=cls\ cla
 comment1.target=void\ drag(java.lang.Class,\ java.lang.Class)
 comment2.params=n
 comment2.target=void\ move(int)
 comment3.params=cls\ cla
 comment3.target=void\ test(java.lang.Class,\ java.lang.Class)
+comment3.text=Metodo\ que\ determina\ bajo\ que\ condiciones\ se\ van\ a\ mover\ los\ objetos\ spaceship\n\ \ \ \ \ \ y\ como\ \ \ \ \ \n
 comment4.params=clb
 comment4.target=void\ score(java.lang.Class)
+comment4.text=Metodo\ que\ hace\ que\ las\ instancias\ de\ los\ objetos\ Spaceship\ desaparezcan\n\ \ \ \ \ y\ sumen\ al\ contador\ de\ puntaje,\ ademas\ de\ desplegar\ la\ pantalla\ de\ ganador\n
 numComments=5
