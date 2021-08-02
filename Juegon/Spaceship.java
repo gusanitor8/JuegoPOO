@@ -57,7 +57,8 @@ public class Spaceship extends Actor
         }else if(lose != null){
             // Si una nave toca un cuadrado de un color que no corresponde el juego acaba
             Greenfoot.stop();
-            Greenfoot.setWorld(new EndGameScreen()); 
+            Greenfoot.setWorld(new EndGameScreen());
+            Greenfoot.playSound("lose.wav");
         }else{
             //Si no se cumple ninguna de las condiciones anteriores la nave se mueve con normalidad
             move(1);
@@ -74,15 +75,10 @@ public class Spaceship extends Actor
         if (spaceship != null)
         {
             Space.setScore(Space.getScore()+1);
+            Greenfoot.playSound("scoring.wav");
             Greenfoot.delay(5);
             getWorld().removeObject(this);
         }
-        
-        if (Space.getScore() == 6)
-        {
-            Greenfoot.stop();
-            Greenfoot.setWorld(new WinnerGameScreen());  
-            
-        }
+  
     }
 }

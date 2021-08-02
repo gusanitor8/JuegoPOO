@@ -1,16 +1,24 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class Space here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Space extends World
 {
     
     //Getters y setters de la variable que lleva el puntaje del usuario       
     private static int score = 0;
+    
+    //Variable que lleva cuenta del nivel
+    private static int level = 1;
+    
+    //metodo que debuelve el nivel actual
+    public static int getLevel()
+    {        
+        if (score != 0){
+            if(score%10 == 0){
+                level = score/10;                 
+            }
+        }
+        return level;
+    }
     
     public static int getScore()
     {
@@ -27,7 +35,8 @@ public class Space extends World
     {            
         super(1366, 768, 1); 
         prepare();
-       
+        setScore(0);
+        Greenfoot.playSound("theme.mp3");
         for (int i = 0; i<=2; i++)
         {
             createB();
@@ -67,6 +76,13 @@ public class Space extends World
         //Score Board
         Score score = new Score();
         addObject(score, 77,47);
+        
+        Level level = new Level();
+        addObject(level, 77,67);
+        
+        //instancia de la clase Create
+        Create create = new Create();
+        addObject(create,0,0);
 
     }
 }

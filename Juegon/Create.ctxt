@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Create
+comment0.text=\nEsta\ clase\ lleva\ a\ cabo\ la\ funcion\ de\ crear\ instanciias\ de\ la\ clase\ Spaceship\nBlue\ y\ SpaceshipRed\ cada\ cierto\ intervalo\ de\ tiempo\n
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=void\ creator()
+numComments=3
