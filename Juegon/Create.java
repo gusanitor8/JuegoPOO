@@ -14,21 +14,23 @@ public class Create extends Actor
     
     public void creator()
     {
-        if (contador< 550){
+        if (contador< 250){
             contador++;
         }else{
-            int n = Greenfoot.getRandomNumber(2);
-            if (n == 0)
+            for (int i = 0; i < 3; i++)
             {
-                BlueSpaceship bluespaceship = new BlueSpaceship();
-                getWorld().addObject(bluespaceship,683,0);  
-                contador = 0;
-            }else{
-                RedSpaceship redspaceship = new RedSpaceship();
-                getWorld().addObject(redspaceship,683,0);  
-                contador = 0;
+                int n = Greenfoot.getRandomNumber(2);
+                if (n == 0)
+                {
+                    BlueSpaceship bluespaceship = new BlueSpaceship();
+                    getWorld().addObject(bluespaceship,683,0);  
+                    contador = 0;                
+                }else{                                
+                    RedSpaceship redspaceship = new RedSpaceship();
+                    getWorld().addObject(redspaceship,683,0);  
+                    contador = 0;
+                }
             }
-            
         }
         
         
