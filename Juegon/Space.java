@@ -36,7 +36,7 @@ public class Space extends World
         super(1366, 768, 1); 
         prepare();
         setScore(0);
-        Greenfoot.playSound("theme.mp3");
+        //Greenfoot.playSound("theme.mp3");
         for (int i = 0; i<=2; i++)
         {
             createB();
